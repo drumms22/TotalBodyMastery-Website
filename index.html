@@ -4,9 +4,8 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/png" href="/public/tbmfavicon-v2-D2JBspQK.png" />
+      <link rel="icon" type="image/png" href="/tbmfavicon-v2.png" />
       <link rel="canonical" href="https://totalbodymastery.fit/" />
-
       <title>Total Body Mastery | System-Based Training & Nutrition in Southeast Michigan</title>
 
       <meta
@@ -38,6 +37,20 @@
         content="A system-based approach to training and nutrition built for long-term progress."
       />
       <meta name="twitter:image" content="https://totalbodymastery.fit/og-image.png" />
+            <script>
+      (function () {
+        const pathname = window.location.pathname;
+        console.log("pathname: ", pathname);
+        
+        // Ignore root
+        if (pathname === "/" || pathname === "/index.html") return;
+
+        // Convert /path to /#/path
+        const newUrl = "/#"+ pathname;
+
+        window.location.replace(newUrl);
+      })();
+    </script>
       <script type="module" crossorigin src="/assets/index-C1MAWLav.js"></script>
       <link rel="stylesheet" crossorigin href="/assets/index-CPgQ16Cu.css">
     </head>
